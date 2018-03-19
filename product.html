@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./images/favicon.png" rel="shortcut icon"/>
+    <meta charset="utf-8"/>
+    <meta content="maximum-scale=1.0" name="viewport"/>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet/less" type="text/css" href="./css/sinai.less"/>
+    <meta content="Launchpad by Anima" name="author">
+    </meta>
+</head>
+<body style="background: rgba(248, 248, 248, 1.0);">
+<div class="container-fluid" style="max-width: 1440px;">
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-header">
+        <a class="navbar-brand logo-header" href="/"><img src="./images/logo.png" class="img-fluid"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">MỸ PHẨM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">THỰC PHẨM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TIN TỨC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GIỚI THIỆU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LIÊN HỆ</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <div class="input-group mb-3 search-box">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..."
+                               aria-describedby="basic-addon2">
+                        <div class="input-group-append" id="searchHeaderBtn">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VN
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">VN</a>
+                        <a class="dropdown-item" href="#">EN</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ĐĂNG NHẬP</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav cart-header">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">0</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-result-header" id="searchResultHeader">
+        <div class="search-result">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-price">
+                380,000₫
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-price">
+                380,000₫
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-price">
+                380,000₫
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-price">
+                380,000₫
+            </div>
+        </div>
+        <div class="search-suggestion">
+            <p>Từ khoá phổ biến</p>
+            <ul>
+                <li>kem chống nắng UV</li>
+                <li>kem dưỡng da</li>
+                <li>sữa dưỡng thể</li>
+            </ul>
+        </div>
+        <div class="view-all-result">
+            <p>Xem tất cả kết quả cho kem chống nắng</p>
+        </div>
+    </div>
+    <div class="cart-detail-header" id="cartDetailHeader">
+        <div class="title">
+            <p>Giỏ hàng của bạn (2 sản phẩm)</p>
+        </div>
+        <div class="product-block-4">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-amount">
+                <span class="minus"><img src="./images/minus.png"></span>
+                <span class="amount">0</span>
+                <span class="plus"><img src="./images/plus.png"></span>
+            </div>
+            <div class="product-price">
+                380,000₫ <i class="fas fa-trash-alt" style="color: #bfbfbf;margin-left: 15px;"></i>
+            </div>
+        </div>
+        <div class="product-block-4">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-amount">
+                <span class="minus"><img src="./images/minus.png"></span>
+                <span class="amount">0</span>
+                <span class="plus"><img src="./images/plus.png"></span>
+            </div>
+            <div class="product-price">
+                380,000₫ <i class="fas fa-trash-alt" style="color: #bfbfbf;margin-left: 15px;"></i>
+            </div>
+        </div>
+        <div class="product-block-4">
+            <div class="product-img">
+                <img class="img-fluid" src="./images/sanpham_1.png"/>
+            </div>
+            <div class="product-name">
+                Kem Chống Nắng Ice Puff Mersenne Beaute (100ml)
+            </div>
+            <div class="product-amount">
+                <span class="minus"><img src="./images/minus.png"></span>
+                <span class="amount">0</span>
+                <span class="plus"><img src="./images/plus.png"></span>
+            </div>
+            <div class="product-price">
+                380,000₫ <i class="fas fa-trash-alt" style="color: #bfbfbf;margin-left: 15px;"></i>
+            </div>
+        </div>
+        <div class="cart-value">
+            <p>Thành tiền: <span>760,000đ</span></p>
+        </div>
+        <div class="cart-action">
+            <button class="btn-check-out">Thanh toán</button>
+            <button class="btn-cart-detail"><i class="fas fa-shopping-cart" style="color: #ed0002;"></i> Xem giỏ hàng
+            </button>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <div class="row product-detail">
+        <nav aria-label="breadcrumb" class="col-12">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item">Mỹ phẩm</li>
+                <li class="breadcrumb-item">Kem dưỡng trắng Sulwhasoo hàng đầu cho da</li>
+            </ol>
+        </nav>
+        <div class="col-7 img-region">
+            <div class="img-list">
+                <div class="active">
+                    <img src="./images/sanpham_2.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <img src="./images/sanpham_3.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <img src="./images/sanpham_3.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <img src="./images/sanpham_3.png" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="./images/sanpham_6.png" class="img-fluid"/>
+            </div>
+        </div>
+        <div class="col-5 info-region">
+            <p class="title">Kem dưỡng trắng Sulwhasoo hàng đầu cho da</p>
+            <p class="price">
+                <span class="original-price">4.700.000đ</span>
+                <span class="discount-price">1.200.000đ</span>
+            </p>
+            <p class="review">
+                <img src="./images/star.png"/>
+                <img src="./images/star.png"/>
+                <img src="./images/star.png"/>
+                <img src="./images/star.png"/>
+                <img src="./images/star.png"/>
+                <span>16 nhận xét</span>
+            </p>
+            <p class="description">
+                Giúp chống oxy hóa gồm hỗn hợp nhân sâm và trà trắng giúp da căng bóng tự nhiên và sạch khỏe cả ngày.
+            </p>
+            <div class="count-down">
+                <div class="clock">
+                    <p>Ưu đãi sẽ kết thúc trong:</p>
+                    <div class="time-block">
+                        <div>03</div>
+                        <span>NGÀY</span>
+                    </div>
+                    <div class="time-block">
+                        <div>16</div>
+                        <span>GIỜ</span>
+                    </div>
+                    <div class="time-block">
+                        <div>25</div>
+                        <span>PHÚT</span>
+                    </div>
+                    <div class="time-block">
+                        <div>18</div>
+                        <span>GIÂY</span>
+                    </div>
+                </div>
+                <div class="amount">
+                    <p>Chỉ còn lại</p>
+                    <div>
+                        <span class="product-amount">05</span><br>
+                        <span>SẢN PHẨM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-action">
+                <button class="btn-check-out">Mua hàng ngay</button>
+                <button class="btn-cart-detail"><i class="fas fa-shopping-cart" style="color: #ed0002;"></i> Cho vào giỏ
+                    hàng
+                </button>
+            </div>
+            <div class="user-action">
+                <span><i class="far fa-heart" style="color: rgba(76, 76, 76, 1.0);"></i> Yêu thích</span>
+                <span class="share"><i class="fas fa-share-alt"
+                                       style="color: rgba(76, 76, 76, 1.0);"></i> Chia sẻ</span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="tab-header">
+                <span class="active">Chi tiết sản phẩm</span>
+                <span>Thông tin thêm</span>
+                <span>Đánh giá</span>
+            </div>
+            <div class="tab-content">
+                Rửa mặt mỗi ngày đúng cách rất quan trọng vì nó giúp loại bỏ bất kỳ tạp chất, dư lượng trang điểm và da
+                dầu trên khuôn mặt. Ngược lại nếu không được loại bỏ khi rửa mặt, chúng có thể dẫn đến một số vấn đề về
+                nghiêm trọng cho làn da như: bị tắc lỗ chân lông (mụn đầu đen), mụn đầu trắng, mụn nhọt…
+                <br>
+                <br>
+                Rửa mặt chính là bước làm sạch da cơ bản mà chúng ta thường thực hiện. Tuy nhiên với mọi loại da nói
+                chung, da hỗn hợp, da dầu, da khô nói riêng, thì việc lựa chọn loại sữa rửa mặt phù hợp với loại da và
+                tình trạng da rất quan trọng.
+                <br>
+                <br>
+                Đó là lý do vì sao Shinai chia sẻ đến cho các bạn gái 3 sản phẩm sữa rửa mặt của Ra&amp;Gowoori- dòng
+                sữa rửa mặt được chiết xuất từ thành phần thiên nhiên như sâm, nha đam, lúa mạch…
+                <br>
+                <br>
+                <br>
+                Thành phần:
+                <br>
+                <br>
+                Chiết xuất nhân sâm.
+                <br>
+                Dâu tằm.
+                <br>
+                Trà xanh.
+                <br>
+                Vitamin A, E…
+                <br>
+                <br>
+                <br>
+                Công dụng:
+                <br>
+                <br>
+                - Sữa rửa mặt Sâm Ra&amp;gowoori giúp loại bỏ nhanh chóng chất tạp bẩn trên da, dồng thời cung cấp các
+                dưỡng chất
+                <br>
+                - Chỉ cần một lượng vừa đủ sữa rửa mặt là có thể tạo được nhiều bọt. Rửa mặt bằng bọt giúp cho da mềm
+                mại và mịn màng hơn bao giờ hết.
+                <br>
+                - Đặc biệt là làm sạch sâu bên trong với cảm giác cực thoải mái và mùi hương thơm đặc biệt của sâm.
+                <br>
+                - Giải phóng nhanh và tận gốc các lớp tết bào chết và cả lớp thâm đen lâu ngày, ngăn ngừa mụn cám, tàn
+                nhang… cải thiện được lớp da bị sạm màu.
+                <br>
+                - Tạo ra một lớp màng bảo vệ, ngăn chặn những tác hại của môi trường như bụi, nắng lên da.
+                <br>
+                - Tăng khả năng đàn hồi cho da, nuôi dưỡng làn da khỏe mạnh.
+                <br>
+                - Công dụng làm đẹp của sâm từ lâu đã được khoa học nghiên cứu và khẳng định.
+                <br>
+                - Nhân sâm có thành phân rất hiệu quẩ tỏng việc làm đẹp là saponin – một glicozit thường gặp trong nhiều
+                loại thực vật. Chính điều này đã làm nên giá trị đặc biệt của nhân sâm.
+                <br>
+                <br>
+                <br>
+                Xuất xứ: Hàn Quốc
+                <br>
+                <br>
+                Dung tích: 120 ml
+                <br>
+                <br>
+                Thùng lớn: 100 hộp
+            </div>
+        </div>
+    </div>
+
+    <div class="product-history">
+        <p class="title">Sản phẩm bạn đã xem</p>
+        <div class="row">
+            <div class="col-3 product-block-5">
+                <div class="product-block-img">
+                    <img src="./images/sanpham_4.png" class="img-fluid"/>
+                </div>
+                <p class="product-block-title">Bộ Sữa Tắm Happy Bath Set Hương Hoa Oải Hương (Chai 500g và Túi…</p>
+                <p>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <span class="product-block-price">740,000đ</span>
+                </p>
+            </div>
+            <div class="col-3 product-block-5">
+                <div class="product-block-img">
+                    <img src="./images/sanpham_4.png" class="img-fluid"/>
+                </div>
+                <p class="product-block-title">Bộ Sữa Tắm Happy Bath Set Hương Hoa Oải Hương (Chai 500g và Túi…</p>
+                <p>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <span class="product-block-price">740,000đ</span>
+                </p>
+            </div>
+            <div class="col-3 product-block-5">
+                <div class="product-block-img">
+                    <img src="./images/sanpham_4.png" class="img-fluid"/>
+                </div>
+                <p class="product-block-title">Bộ Sữa Tắm Happy Bath Set Hương Hoa Oải Hương (Chai 500g và Túi…</p>
+                <p>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <span class="product-block-price">740,000đ</span>
+                </p>
+            </div>
+            <div class="col-3 product-block-5">
+                <div class="product-block-img">
+                    <img src="./images/sanpham_4.png" class="img-fluid"/>
+                </div>
+                <p class="product-block-title">Bộ Sữa Tắm Happy Bath Set Hương Hoa Oải Hương (Chai 500g và Túi…</p>
+                <p>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <img src="./images/star.png"/>
+                    <span class="product-block-price">740,000đ</span>
+                </p>
+            </div>
+        </div>
+        <div class="navigation">
+            <i class="fas fa-circle active"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+        </div>
+    </div>
+
+    <div class="back-to-category">
+        <p><i class="fas fa-arrow-left"></i> TRỞ VỀ "MỸ PHẨM"</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <img src="./images/logo_2.png" class="img-fluid"/>
+                    <p class="contact-info">Đia chỉ : 11/9 Nguyễn Văn Mại, P4, Tân Bình, TP. HCM</p>
+                    <p class="contact-info">Hotline : 0947.998.498<br>Email : support@shinai.com</p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p class="title">Chính sách</p>
+                    <p class="detail">Chính sách bảo mật</p>
+                    <p class="detail">Điều khoản mua bán hàng</p>
+                    <p class="detail">Điều khoản sử dụng</p>
+                    <p class="detail">Thanh toán</p>
+                    <p class="detail">Kiểm tra đơn hàng</p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p class="title">Doanh nghiệp</p>
+                    <p class="detail">Về Sinai</p>
+                    <p class="detail">Cơ hội hợp tác</p>
+                    <p class="detail">Tuyển dụng</p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p class="title">Kết nối với chúng tôi</p>
+                    <p class="title"><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i
+                            class="fab fa-linkedin-in"></i><i class="fab fa-google-plus-g"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="./js/less.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1309 @@
+.img-center {
+    position: relative;
+    img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+.navbar-header {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border: 1px solid #efefef;
+    .logo-header {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+    a {
+        font-family: "HelveticaNeue-Medium", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1.0) !important;
+        line-height: 19px;
+        margin: 0 10px;
+    }
+    .search-box {
+        margin-bottom: 0 !important;
+        input {
+            border: 0;
+        }
+        span {
+            border: 0;
+            background-color: #fff;
+        }
+    }
+    .cart-header {
+        background: rgba(237, 0, 2, 1.0);
+        position: absolute;
+        right: calc(~"(100% - 1410px) / 2");
+        height: 64px;
+        width: 100px;
+        padding: 10px 26px;
+        a {
+            font-family: "HelveticaNeue", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 1.0) !important;
+            line-height: 24px;
+        }
+    }
+}
+
+.search-result-header {
+    width: 475px;
+    overflow: auto;
+    float: right;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    right: calc(~"(100% - 1410px) / 2");
+    display: none;
+    .search-result {
+        width: 100%;
+        overflow: auto;
+        padding: 0 20px 20px 20px;
+        .product-img {
+            float: left;
+            height: 72px;
+            width: 72px;
+            background: rgba(249, 249, 249, 1.0);
+            text-align: center;
+            margin-right: 20px;
+        }
+        .product-name {
+            float: left;
+            width: 233px;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 24px;
+            margin-right: 20px;
+        }
+        .product-price {
+            float: left;
+            width: 60px;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 16px;
+            margin-top: 4px;
+        }
+    }
+    .search-suggestion {
+        border-top: 1px solid #efefef;
+        padding: 20px;
+        margin: 0 20px;
+        p {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 18px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            li {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                color: rgba(17, 17, 17, 1.0);
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .view-all-result {
+        border-top: 1px solid #efefef;
+        padding: 20px;
+        margin: 0 20px;
+        text-align: center;
+        p {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 16px;
+            margin: 0;
+        }
+    }
+}
+
+.cart-detail-header {
+    width: 644px;
+    overflow: auto;
+    float: right;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    right: calc(~"(100% - 1410px) / 2");
+    display: none;
+    .title {
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 24px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: left;
+        border-bottom: 1px solid #efefef;
+        padding: 20px 0 0 0;
+        margin: 0 20px;
+    }
+    .product-block-4 {
+        margin: 20px;
+        border-bottom: 1px solid #efefef;
+        overflow: auto;
+        padding-bottom: 20px;
+        .product-img {
+            float: left;
+            height: 72px;
+            width: 72px;
+            background: rgba(249, 249, 249, 1.0);
+            text-align: center;
+            margin-right: 20px;
+
+        }
+        .product-name {
+            float: left;
+            width: 233px;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 24px;
+            margin-right: 20px;
+        }
+        .product-amount {
+            float: left;
+            width: 90px;
+            .minus {
+                background: rgba(246, 246, 246, 1.0);
+                padding: 5px;
+            }
+            .plus {
+                background: #ed0002;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .amount {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                color: rgba(81, 81, 81, 1.0);
+                line-height: 16px;
+                margin: 0 10px;
+            }
+        }
+        .product-price {
+            float: right;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 16px;
+        }
+    }
+    .cart-value {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(81, 81, 81, 1.0);
+        line-height: 18px;
+        text-align: right;
+        span {
+            padding: 0 29px;
+        }
+    }
+    .cart-action {
+        text-align: center;
+        margin: 25px 0;
+        .btn-check-out {
+            background: rgba(237, 0, 2, 1.0);
+            border-radius: 24px;
+            border: 1px solid rgba(237, 0, 2, 1.0);
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 1.0);
+            line-height: 18px;
+            padding: 15px 50px;
+            margin: 10px;
+        }
+        .btn-cart-detail {
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid rgba(237, 0, 2, 1.0);
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(237, 0, 2, 1.0);
+            line-height: 18px;
+            padding: 15px 50px;
+            margin: 10px;
+        }
+    }
+}
+
+.free-ship-text {
+    background: rgba(250, 250, 250, 1.0);
+    margin: 0;
+    padding: 10px 0;
+}
+
+.index-slide {
+    max-height: 668px;
+    background-color: #FED8E4;
+    .carousel-item {
+        max-height: 668px;
+    }
+}
+
+.carousel-indicators {
+    text-align: right;
+    float: right;
+    right: 2% !important;
+    left: inherit;
+}
+
+.group-product-index {
+    background-color: #fff;
+    margin-bottom: 40px;
+    .title {
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.0);
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 36px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: center;
+    }
+    .description {
+        background: rgba(255, 255, 255, 0.0);
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 24px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: center;
+    }
+}
+
+.best-seller-index {
+    position: relative;
+    margin-top: -50px;
+    z-index: 99;
+}
+
+.product-block {
+    margin-bottom: 30px;
+    .product-block-price {
+        background: rgba(255, 255, 255, 0.0);
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 18px;
+        color: rgba(237, 0, 2, 1.0);
+        line-height: 22px;
+        right: 20px;
+        position: absolute;
+    }
+    .product-block-img {
+        background-position: center;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .product-block-title {
+        margin-top: 20px;
+    }
+}
+
+.btn-view-all {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 30px 0;
+    button {
+        background-color: #fff;
+        color: rgba(237, 0, 2, 1.0);
+        border: 1px solid rgba(237, 0, 2, 1.0);
+        text-align: center;
+        padding: 10px 40px;
+        border-radius: 22px;
+    }
+}
+
+.register-email {
+    height: 592px;
+    background: rgb(243, 243, 243, 1.0);
+    margin-bottom: 30px;
+    .title {
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.0);
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 36px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .description {
+        background: rgba(255, 255, 255, 0.0);
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 24px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: center;
+    }
+    .input-group {
+        max-width: 700px;
+        margin: auto;
+        border: 1px solid #dfdfdf;
+        border-radius: 5px;
+        input {
+            border: 0;
+        }
+        .input-group-append {
+            background: #fff;
+            border-radius: 5px;
+            button {
+                background-color: #ed0002;
+                color: #fff;
+                border: 1px solid #ed0002;
+                text-align: center;
+                padding: 10px 40px;
+                border-radius: 22px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+footer {
+    background: rgba(51, 51, 51, 1.0);
+    padding: 20px 0;
+    img {
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1.0);
+        line-height: 24px;
+    }
+    .title {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 1.0);
+        line-height: 18px;
+        padding-bottom: 2rem;
+    }
+    .detail {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 14px;
+        color: rgba(197, 197, 197, 1.0);
+        line-height: 16px;
+    }
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.img-category {
+    margin-bottom: 50px;
+}
+
+.column-filter {
+    p {
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 20px;
+        color: rgba(51, 51, 51, 1.0);
+        line-height: 24px;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 50px;
+        li {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(85, 85, 85, 1.0);
+            line-height: 16px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.breadcrumb {
+    background: #F8F8F8;
+    padding-top: 0;
+    .breadcrumb-item {
+        a {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 18px;
+        }
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(81, 81, 81, 1.0) !important;
+        line-height: 18px;
+    }
+    .breadcrumb-item + .breadcrumb-item:before {
+        content: "> ";
+    }
+}
+
+.filter-row {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+    .filter-row-icon {
+        color: #000;
+        padding-top: 8px;
+    }
+    label {
+        width: calc(~"100% - 200px");
+        float: left;
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 8px;
+    }
+    select {
+        width: 200px;
+        float: left;
+    }
+}
+
+.product-block-2 {
+    padding: 20px;
+    height: 385px;
+
+    .product-img {
+        background: rgba(249, 249, 249, 1.0);
+        text-align: center;
+        img {
+
+        }
+
+        .product-discount {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 1.0);
+            line-height: 16px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(255, 91, 92, 1.0);
+            padding: 3px 15px;
+            border-radius: 5px;
+        }
+    }
+
+    .product-title {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(81, 81, 81, 1.0);
+        line-height: 24px;
+    }
+
+    .product-price {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1.0);
+        line-height: 18px;
+    }
+
+    .product-description {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(51, 51, 51, 1.0);
+        line-height: 24px;
+        padding-bottom: 40px;
+    }
+
+    .add-to-cart {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(237, 0, 2, 1.0);
+        line-height: 24px;
+    }
+
+}
+
+.user-menu {
+    padding: 50px 20px;
+    .left-column {
+        background: rgba(245, 245, 245, 1.0);
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                padding: 10px 0 10px 40px;
+                line-height: 16px;
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                &.active {
+                    color: rgba(237, 0, 2, 1.0);
+                    border-left: 5px solid rgba(237, 0, 2, 1.0);
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+    .title {
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 24px;
+        color: rgba(81, 81, 81, 1.0);
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .product-block-3 {
+        background: #fff;
+        margin: 5px 0;
+        padding: 15px;
+        height: 173px;
+        .product-img {
+            text-align: center;
+            img {
+                max-height: 143px;
+            }
+        }
+        .product-title {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 24px;
+        }
+        .product-description {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(138, 138, 143, 1.0);
+            line-height: 24px;
+        }
+        .product-price {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 16px;
+        }
+        .product-original-price {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 12px;
+            color: rgba(138, 138, 143, 1.0);
+            line-height: 14px;
+            text-decoration: line-through;
+        }
+        .discount-price {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 12px;
+            color: rgba(237, 0, 2, 1.0);
+            line-height: 14px;
+            text-decoration: none;
+        }
+        .product-reviews {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 12px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 24px;
+        }
+        .x-btn {
+            color: #bfbfbf;
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            cursor: pointer;
+        }
+    }
+    .favorite-empty {
+        background: #fff;
+        text-align: center;
+        padding: 80px 0 60px 0;
+        p:first-child {
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(17, 17, 17, 1.0);
+            letter-spacing: -0.4px;
+            line-height: 24px;
+        }
+        p {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 1.0);
+            letter-spacing: -0.28px;
+            line-height: 24px;
+        }
+    }
+    .address-block {
+        background: #FFFFFF;
+        margin: 0 20px 20px 20px;
+        padding-bottom: 16px;
+        p {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(17, 17, 17, 1.0);
+            letter-spacing: -0.32px;
+            line-height: 18px;
+            margin-bottom: 0;
+            margin-top: 16px;
+            svg {
+                color: #EB0715;
+                margin-right: 10px;
+            }
+        }
+        .edit {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(80, 153, 187, 1.0);
+            letter-spacing: -0.28px;
+            line-height: 14px;
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+        }
+        .delete {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(149, 19, 35, 1.0);
+            letter-spacing: -0.28px;
+            line-height: 16px;
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+        .add {
+            cursor: pointer;
+        }
+    }
+    .tab-header {
+        span {
+            background: #F7F7F7;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 57px;
+            padding: 20px;
+            border-right: 1px solid #E9E9E9;
+            &.active {
+                background: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+    .tab-content {
+        background: #fff;
+        padding: 20px;
+        thead {
+            td {
+                border: none;
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 16px;
+                color: rgba(81, 81, 81, 1.0);
+                line-height: 24px;
+            }
+        }
+        tbody {
+            td {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                color: rgba(17, 17, 17, 1.0);
+                line-height: 24px;
+                padding: 20px 0.75rem;
+            }
+
+        }
+    }
+}
+
+.product-detail {
+    background: rgba(250, 250, 250, 1.0);
+    margin: 0;
+    .breadcrumb {
+        margin: 20px;
+        background: rgba(250, 250, 250, 1.0);
+        li {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(51, 51, 51, 1.0);
+            line-height: 26px;
+        }
+    }
+    .img-region {
+        margin-top: 30px;
+        .img-list {
+            text-align: center;
+            width: 77px;
+            margin: 70px 15px 15px 15px;
+            float: left;
+            div {
+                background: #fff;
+                margin: 10px 0;
+                border: 1px solid rgba(235, 235, 235, 1.0);
+                height: 77px;
+                &.active {
+                    border: 1px solid #000;
+                }
+            }
+
+        }
+        .main-img {
+            width: calc(~"100% - 107px");
+            float: left;
+            text-align: center;
+        }
+    }
+    .info-region {
+        margin-top: 30px;
+        padding-right: 100px;
+        .title {
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 24px;
+            color: rgba(51, 51, 51, 1.0);
+            line-height: 34px;
+        }
+        .price {
+            .original-price {
+                font-family: "San Francisco", Helvetica, Arial, serif;
+                font-size: 24px;
+                color: rgba(138, 138, 143, 1.0);
+                line-height: 34px;
+                text-decoration: line-through;
+            }
+            .discount-price {
+                font-family: "San Francisco", Helvetica, Arial, serif;
+                font-size: 24px;
+                color: rgba(237, 0, 2, 1.0);
+                line-height: 34px;
+            }
+        }
+        .review {
+            span {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 16px;
+                color: rgba(17, 17, 17, 1.0);
+                letter-spacing: -0.32px;
+                line-height: 54px;
+            }
+        }
+        .description {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(51, 51, 51, 1.0);
+            line-height: 24px;
+        }
+        .count-down {
+            margin-top: 50px;
+            overflow: auto;
+            .clock {
+                width: calc(~"70% - 20px");
+                margin-right: 20px;
+                float: left;
+                p {
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 16px;
+                    color: rgba(17, 17, 17, 1.0);
+                    line-height: 24px;
+                }
+                .time-block {
+                    width: calc(~"25% - 20px");
+                    margin-right: 20px;
+                    float: left;
+                    text-align: center;
+                    div {
+                        background: #fff;
+                        padding: 5px;
+                        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                        font-size: 16px;
+                        color: rgba(51, 51, 51, 1.0);
+                        line-height: 18px;
+                        border-radius: 11px;
+                        border: 1px solid rgba(214, 214, 214, 1.0);
+                    }
+                    span {
+                        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                        font-size: 12px;
+                        color: rgba(51, 51, 51, 1.0);
+                        line-height: 14px;
+                    }
+                }
+            }
+            .amount {
+                width: calc(~"30%");
+                float: left;
+                p {
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 16px;
+                    color: rgba(17, 17, 17, 1.0);
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    padding-left: 20px;
+                }
+                div {
+                    border-left: 1px solid #EBEBEB;
+                    padding-left: 20px;
+                    span {
+                        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                        font-size: 12px;
+                        color: rgba(51, 51, 51, 1.0);
+                        line-height: 14px;
+                        &.product-amount {
+                            font-family: "San Francisco", Helvetica, Arial, serif;
+                            font-size: 36px;
+                            color: rgba(237, 0, 2, 1.0);
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+        .cart-action {
+            text-align: center;
+            margin: 25px 0;
+            .btn-check-out {
+                background: rgba(237, 0, 2, 1.0);
+                border-radius: 24px;
+                border: 1px solid rgba(237, 0, 2, 1.0);
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1.0);
+                line-height: 18px;
+                padding: 15px 50px;
+            }
+            .btn-cart-detail {
+                background: #fff;
+                border-radius: 24px;
+                border: 1px solid rgba(237, 0, 2, 1.0);
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 16px;
+                color: rgba(237, 0, 2, 1.0);
+                line-height: 18px;
+                padding: 15px 50px;
+            }
+        }
+        .user-action {
+            span {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                color: rgba(76, 76, 76, 1.0);
+                line-height: 16px;
+                margin-right: 20px;
+                &.share {
+                    padding-left: 20px;
+                    border-left: 1px solid #EBEBEB;
+                }
+            }
+        }
+    }
+    .tab-header {
+        border-bottom: 1px solid #bfbfbf;
+        margin: 150px 100px 0 100px;
+        span {
+            margin-right: 50px;
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(138, 138, 143, 1.0);
+            line-height: 49px;
+            padding-bottom: 13px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                border-bottom: 3px solid rgba(237, 0, 2, 1.0);
+                color: rgba(51, 51, 51, 1.0);
+            }
+        }
+    }
+    .tab-content {
+        margin: 20px 100px 100px 100px;
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(51, 51, 51, 1.0);
+        line-height: 26px;
+    }
+}
+
+.product-history {
+    background: #fafafa;
+    padding: 0 100px 50px 100px;
+    .title {
+        text-align: center;
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 36px;
+        color: rgba(81, 81, 81, 1.0);
+        border-bottom: 1px solid #bfbfbf;
+        padding-bottom: 15px;
+    }
+    .product-block-5 {
+        margin: 20px 0;
+        .product-block-img {
+            text-align: center;
+            background: rgba(249, 249, 249, 1.0);
+            height: 290px;
+            position: relative;
+            img {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        }
+        .product-block-title {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(81, 81, 81, 1.0);
+            line-height: 23px;
+        }
+        .product-block-price {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(237, 0, 2, 1.0);
+            line-height: 16px;
+            right: 20px;
+            position: absolute;
+        }
+    }
+    .navigation {
+        overflow: auto;
+        text-align: center;
+        svg {
+            margin: 0 10px;
+            color: rgba(221, 221, 221, 1.0);
+            &.active {
+                color: rgba(237, 0, 2, 1.0);
+            }
+        }
+    }
+}
+
+.back-to-category {
+    padding: 50px 0;
+    background: #fafafa;
+    p {
+        text-align: center;
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1.0);
+        line-height: 18px;
+    }
+}
+
+.login {
+    background-repeat: no-repeat;
+    min-height: 953px;
+    .title {
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 36px;
+        color: rgba(51, 51, 51, 1.0);
+        margin-top: 150px;
+    }
+    .description {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 18px;
+        color: rgba(51, 51, 51, 1.0);
+        line-height: 27px;
+        margin-bottom: 40px;
+    }
+    .label {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1.0);
+        letter-spacing: -0.32px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    input {
+        margin-bottom: 20px;
+    }
+    .forgot {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 14px;
+        color: rgba(80, 153, 187, 1.0);
+        letter-spacing: -0.28px;
+        line-height: 24px;
+        position: absolute;
+        right: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .rules {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 14px;
+        color: rgba(138, 138, 143, 1.0);
+        line-height: 16px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .btn-login {
+        background: rgba(237, 0, 2, 1.0);
+        border-radius: 24px;
+        border: 1px solid rgba(237, 0, 2, 1.0);
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 1.0);
+        line-height: 18px;
+        padding: 15px 0;
+        width: 50%;
+        margin: 10px;
+    }
+    .line-text {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(17, 17, 17, 1.0);
+        letter-spacing: -0.32px;
+        line-height: 54px;
+        float: left;
+        width: 100px;
+        text-align: center;
+    }
+    .line {
+        border-bottom: 1px solid #bfbfbf;
+        width: calc(~"50% - 50px");
+        height: 27px;
+        overflow: auto;
+        float: left;
+        margin-bottom: 25px;
+    }
+    .btn-3rd-login {
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 1.0);
+        letter-spacing: -0.32px;
+        line-height: 54px;
+        width: calc(~"50% - 10px");
+        float: left;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+    .fb-login {
+        background-color: #3F5D92;
+    }
+    .gmail-login {
+        background-color: #D94D43;
+    }
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.checkout-tab {
+    div {
+        text-align: center;
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 16px;
+        color: rgba(138, 138, 143, 1.0);
+        line-height: 18px;
+        background: rgba(250, 250, 250, 1.0);
+        padding: 10px 0;
+        .number-circle {
+            border-radius: 50%;
+            padding: 4px 8px;
+            border: 2px solid rgba(138, 138, 143, 1.0);
+            text-align: center;
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(138, 138, 143, 1.0);
+            line-height: 16px;
+        }
+        &.active {
+            background: rgba(237, 0, 2, 1.0);
+            color: rgba(255, 255, 255, 1.0);
+            .number-circle {
+                border-color: #fff;
+                color: rgba(255, 255, 255, 1.0);
+            }
+        }
+        &.done {
+            .number-circle {
+                background: #68B360;
+                color: rgba(255, 255, 255, 1.0);
+                border: rgba(250, 250, 250, 1.0);
+            }
+        }
+    }
+}
+
+.checkout-step {
+    background: #f8f8f8;
+    padding: 50px 0;
+    .login {
+        min-height: 0 !important;
+        .title {
+            margin-top: 0px !important;
+            font-family: "San Francisco", Helvetica, Arial, serif !important;;
+            font-size: 28px !important;;
+            color: rgba(33, 43, 54, 1.0) !important;;
+        }
+    }
+    .product-list {
+        .title {
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(33, 43, 54, 1.0);
+            line-height: 24px;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 20px;
+        }
+        .product-list-container {
+            border-bottom: 1px solid #dfdfdf;
+            margin-bottom: 40px;
+            .product-block-6 {
+                margin: 20px;
+                overflow: auto;
+                padding-bottom: 20px;
+                .product-img {
+                    float: left;
+                    height: 72px;
+                    width: 72px;
+                    background: rgba(249, 249, 249, 1.0);
+                    text-align: center;
+                    margin-right: 20px;
+
+                }
+                .product-name {
+                    float: left;
+                    width: calc(~"100% - 212px");;
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 14px;
+                    color: rgba(17, 17, 17, 1.0);
+                    line-height: 24px;
+                    margin-right: 20px;
+                }
+                .product-price {
+                    float: left;
+                    width: 100px;
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 14px;
+                    color: rgba(81, 81, 81, 1.0);
+                    line-height: 16px;
+                    text-align: right;
+                }
+            }
+        }
+        .label {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(17, 17, 17, 1.0);
+            line-height: 24px;
+        }
+        .amount {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(237, 0, 2, 1.0);
+            text-align: left;
+            line-height: 24px;
+            position: absolute;
+            right: 15px;
+        }
+        .free-ship {
+            color: rgba(102, 182, 89, 1.0) !important;
+        }
+        .btn-checkout {
+            margin: 40px auto 10px;
+            width: 70%;
+            button {
+                background: rgba(237, 0, 2, 1.0);
+                border-radius: 24px;
+                border: 1px solid rgba(237, 0, 2, 1.0);
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1.0);
+                line-height: 18px;
+                padding: 15px 0;
+                width: 100%;
+            }
+        }
+        .rules {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 14px;
+            color: rgba(147, 147, 147, 1.0);
+            text-align: left;
+            line-height: 22px;
+            margin-top: 40px;
+        }
+    }
+    .input-address {
+        .title {
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(33, 43, 54, 1.0);
+            line-height: 24px;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 20px;
+        }
+        .margin-left-20 {
+            margin-left: 20px;
+        }
+        .col-form-label {
+            font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+            font-size: 16px;
+            color: rgba(17, 17, 17, 1.0);
+            text-align: left;
+            letter-spacing: -0.32px;
+        }
+    }
+    .input-payment {
+        .title {
+            font-family: "San Francisco", Helvetica, Arial, serif;
+            font-size: 20px;
+            color: rgba(33, 43, 54, 1.0);
+            line-height: 24px;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 20px;
+        }
+        .payment-method {
+            overflow: auto;
+            width: 100%;
+            .payment-choose {
+                width: 35px;
+                float: left;
+                margin-top: 40px;
+            }
+            .payment-img {
+                float: left;
+                margin: 0 20px;
+                width: 125px;
+                min-height: 100px;
+            }
+            .payment-name {
+                float: left;
+                width: calc(~"100% - 200px");
+                margin-top: 20px;
+                .name {
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 16px;
+                    color: rgba(33, 43, 54, 1.0);
+                    line-height: 18px;
+                    margin-bottom: 0;
+                }
+                .description {
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 14px;
+                    color: rgba(138, 138, 143, 1.0);
+                    line-height: 24px;
+                }
+            }
+        }
+        .input-coupon {
+            .title {
+                input {
+                    margin-right: 10px;
+                }
+            }
+            .input {
+                margin: 20px 0;
+                input {
+                    border: 1px dashed #bfbfbf;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+                button {
+                    background: rgba(237, 0, 2, 1.0);
+                    border-radius: 24px;
+                    border: 1px solid rgba(237, 0, 2, 1.0);
+                    font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 1.0);
+                    line-height: 18px;
+                    padding: 10px 0;
+                    width: 30%;
+                }
+            }
+            .description {
+                font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+                font-size: 14px;
+                color: rgba(33, 43, 54, 1.0);
+                line-height: 16px;
+            }
+        }
+    }
+}
